@@ -1,0 +1,188 @@
+/* ------------------------------------ GOOGLE FONTS ------------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;500&display=swap');
+/* ------------------------------------ GOOGLE FONTS ------------------------------------ */
+/* ------------------------------------ ALL ------------------------------------ */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+/* ------------------------------------ ALL ------------------------------------ */
+/* ------------------------------------ BODY ------------------------------------ */
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+    background-color: #ccc;
+}
+/* ------------------------------------ BODY ------------------------------------ */
+/* ------------------------------------ TOPBAR ------------------------------------ */
+.topbar {
+    background-color: #292929;
+    display: flex;
+    align-items: center;
+}
+/* ------------------------------------ TOPBAR ------------------------------------ */
+/* ------------------------------------ NAVBAR ------------------------------------ */
+.navbar-title {
+    color: #df4700;
+    margin: 0 1%;
+}
+
+.navbar-links {
+    z-index: 2;
+    display: flex;
+}
+
+.navbar-links a {
+    text-decoration: none;
+    color: #ccc;
+    margin: 0 10%;
+    transition: color 0.3s;
+}
+
+.navbar-links a:first-child {
+    margin-left: 50%;
+}
+
+.navbar-links a:last-child {
+    margin-right: 0;
+}
+
+.navbar-links a:hover {
+    color: #df4700;
+    transition: color 0.3s;
+}
+/* ------------------------------------ NAVBAR ------------------------------------ */
+/* ------------------------------------ SOCIAL ------------------------------------ */
+.social {
+    z-index: 1;
+    width: 100%;
+}
+
+.social img {
+    opacity: 0.5;
+    float: right;
+    margin-left: 1%;
+    margin-right: 1%;
+    width: 30px;
+    height: 30px;
+    transition: all 0.3s;
+}
+
+.social img:hover {
+    transition: all 0.3s;
+    opacity: 1;
+}
+/* ------------------------------------ SOCIAL ------------------------------------ */
+/* ------------------------------------ RESPONSIVE TOPBAR ------------------------------------ */
+@media only screen and (max-width: 650px) {
+    .topbar {
+        display: block;
+    }
+
+    .navbar-title {
+        text-align: center;
+    }
+
+    .navbar-links a {
+        margin: 1% 0;
+        text-align: center;
+    }
+
+    .navbar-links a:first-child {
+        margin-left: 0;
+    }
+
+    .navbar-links {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .social {
+        display: flex;
+    }
+
+    .social img {
+        margin-left: 10px;
+        margin-bottom: 10px;
+    }
+}
+/* ------------------------------------ RESPONSIVE TOPBAR ------------------------------------ */
+/* ------------------------------------ CONTACT ------------------------------------ */
+/* ------------------------------------ HEADER ------------------------------------ */
+.header {
+    margin: 1%;
+    padding: 1%;
+    background-color: #fff;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+input, textarea {
+    border-radius: 5px;
+}
+
+.names {
+    display: flex;
+}
+
+.firstname, .lastname {
+    width: 49%;
+    height: 30px;
+    margin: 1%;
+}
+
+.email {
+    width: 99%;
+    margin: 1%;
+    height: 30px;
+}
+
+textarea {
+    width: 99%;
+    margin: 1%;
+}
+
+.envoyer {
+    background-color: #ccc;
+    border: 0;
+    border-radius: 5px;
+    width: 49%;
+    height: 30px;
+    margin: 1%;
+}
+
+.effacer {
+    background-color: #ccc;
+    border: 0;
+    border-radius: 5px;
+    width: 49%;
+    height: 30px;
+    margin: 1%;
+}
+
+.buttons {
+    display: flex;
+}
+
+button:hover {
+    background-color: #df4700;
+    transition: all 0.3s;
+}
+/* ------------------------------------ HEADER ------------------------------------ */
+/* ------------------------------------ FOOTER ------------------------------------ */
+.footer {
+    background-color: #292929;
+    display: flex;
+    width: 100%;
+    height: auto;
+    flex-direction: column;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-phone, .footer-email {
+    color: #ccc;
+    text-align: center;
+}
+/* ------------------------------------ FOOTER ------------------------------------ */
+/* ------------------------------------ CONTACT ------------------------------------ */
